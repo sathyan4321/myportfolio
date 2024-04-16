@@ -1,0 +1,79 @@
+.about-container{
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    width: 100%;
+    background:  #632637;
+
+    h1{
+        font-family: "Cormorant Garamond", serif;
+        font-size: 30px;
+        font-weight: 900;
+        color: #ffffff
+    }
+    h4{
+        font-family: "Cormorant Garamond", serif;
+        font-size: 24px;
+        color: #ffffff;
+    }
+    
+    .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 100px;
+        
+        p{
+            font-family: "Bad Script";
+            width: 30%;
+            height: 55vh;
+            font-size: 1.3rem;
+            color: #ffffff;
+            text-align: justify;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+            line-height: 2.5rem;
+            font-style: normal;
+            word-spacing: 0.5rem;
+            text-shadow: 1px 1px 1px #fdf9f9;
+            background-color: #af677c;
+            padding: 2%;
+            border-radius: 30px;
+            transition: all 0.5s ease;
+            
+            strong{
+                text-align: center !important; 
+            }
+
+            span{
+                text-decoration: underline;
+            }
+        }
+        .ap1{
+            animation: left 3s steps(40);
+        }
+        .ap2{
+            animation: right 3s steps(40);
+        }
+        @keyframes left {
+            0% { position: relative; left: -130px; opacity: 0;}
+            20% { position: relative; left: -60px; opacity: 0.2;}
+            40% { position: relative; left: -40px; opacity: 0.4;}
+            60% { position: relative; left: -20px; opacity: 0.6;}
+            80% { position: relative; left: -10px; opacity: 0.8;}
+            100% { position: relative; left: 0px; opacity: 1;}
+          }
+        
+          @keyframes right {
+            0% { position: relative; right: -130px; opacity: 0;}
+            20% { position: relative; right: -60px; opacity: 0.2;}
+            40% { position: relative; right: -40px; opacity: 0.4;}
+            60% { position: relative; right: -20px; opacity: 0.6;}
+            80% { position: relative; right: -10px; opacity: 0.8;}
+            100% { position: relative; right: 0px; opacity: 1;}
+          }
+
+    }
+}

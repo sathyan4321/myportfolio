@@ -1,0 +1,123 @@
+.navigation {
+  margin: 9% 3%;
+  position: fixed;
+  height: 60vh;
+  width: 9vh;
+  background: #ffc4d3;
+  border-radius: 45px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  font-family:  "Bangers", system-ui;
+  z-index: 2;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+}
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+
+.navigation ul li a {
+  position: relative;
+  left: -57%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  text-align: center;
+  transition: 0.5s;
+}
+.navigation ul li.active a .icon {
+  color: #fff;
+}
+.navigation ul li a .icon i {
+  font-size: 24px;
+}
+.navigation ul li a .title {
+  position: absolute;
+  top: 50%;
+  left: 110px;
+  background: #fff;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: 0.5s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+}
+.navigation ul li:hover a .title {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-25px) translateY(-50%);
+}
+.navigation ul li a .title::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  left: -8px;
+  top: 46%;
+  transition: 0.5s;
+  transform: rotate(45deg) translateY(-50%);
+  border-radius: 2px;
+}
+.navigation ul .indicator {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  transition: 0.5s;
+}
+.navigation ul .indicator::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 50%;
+  left: 59%;
+  transform: translate(-50%, -50%);
+  background: #000000;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.navigation ul li:nth-child(1).active ~ .indicator {
+  transform: translateY(calc(70px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateY(calc(91px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator {
+  transform: translateY(calc(91px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator {
+  transform: translateY(calc(91.5px * 3));
+}
+.navigation ul li:nth-child(5).active ~ .indicator {
+  transform: translateY(calc(91.5px * 4));
+}
+.navigation ul li:nth-child(6).active ~ .indicator {
+  transform: translateY(calc(91.5px * 5));
+}
