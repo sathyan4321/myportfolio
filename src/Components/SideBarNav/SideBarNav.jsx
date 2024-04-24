@@ -29,38 +29,38 @@ function SideBarNav() {
         
           <ul>
             <li className="list active">
-              <Link to="/" >
-                <span className="icon"><FaHome /></span>
+              <Link to="/home" >
+                <span className="icon"><FaHome className='i'/></span>
                 <span className="title">Home</span>
               </Link>
             </li>
             <li className="list active">
               <Link to="/about" >
-                <span className="icon"><BsFillPersonFill /></span>
+                <span className="icon"><BsFillPersonFill className='i'/></span>
                 <span className="title">About me</span>
               </Link>
             </li>
             <li className="list">
-              <Link to="/portfolio">
-                <span className="icon"><ImProfile /></span>
-                <span className="title">Portfolio</span>
-              </Link>
-            </li>
-            <li className="list">
               <Link to="/projects">
-                <span className="icon"><GrProjects /></span>
+                <span className="icon"><GrProjects className='i'/></span>
                 <span className="title">Projects</span>
               </Link>
             </li>
             <li className="list">
               <Link to="/education">
-                <span className="icon"><FaBookReader /></span>
+                <span className="icon"><FaBookReader className='i'/></span>
                 <span className="title">Education</span>
               </Link>
             </li>
             <li className="list">
+              <Link to="/portfolio">
+                <span className="icon"><ImProfile className='i'/></span>
+                <span className="title">Portfolio</span>
+              </Link>
+            </li>
+            <li className="list">
               <Link to="/contact">
-                <span className="icon"><FaAddressBook /></span>
+                <span className="icon"><FaAddressBook className='i'/></span>
                 <span className="title">Contact</span>
               </Link>
             </li>

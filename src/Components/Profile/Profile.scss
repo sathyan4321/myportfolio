@@ -1,10 +1,203 @@
 .portfolio-container{
     position: absolute;
     top: 0%;
-    height: 100vh;
+    height: 100;
     width: 100%;
     background:  #c88ea7;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+
     
+    h1{
+        color: #ffffff;
+        font-size: 3rem;
+        font-family: "Bad Script", cursive;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .resume{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 30px;
+        width: 80vw;
+        height: 100%;
+        
+
+        .container{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 10px;
+        }
+        
+        .box{
+            padding: 2%;
+            text-align: justify;
+            background: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px 1px rgb(109, 108, 108);
+
+        ul{
+            list-style: square;
+            font-size: 1.1rem;
+            color: #000000;
+            font-weight: 400;
+        }
+        }
+    }
+    .resume{
+        .information{
+            width: 26.7vw;
+            height: 16vh;
+            
+        }
+
+        .hard-skills{
+            width: 51vw;
+            height: 100;
+            
+        }
+
+        .soft-skills{
+            width: 26.7vw;
+            height: 100;
+            
+        }
+
+        .work-experience{
+            width: 26.7vw;
+            height: 100;
+            
+        }
+    }
+
+    button{
+        margin-top: 4%;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        text-align: center;
+        width: 20rem;
+        height: 7vh;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1), -1px -1px 1px 1px rgba(0, 0, 0, 0.1);
+        background: rgb(255, 216, 249);
+        transition: all 1s ease-in-out;
+    }
+    button:hover{
+        cursor: pointer;
+        background: linear-gradient(0deg, rgb(250, 183, 211) 0%, rgb(252, 219, 250) 100%);
+        transition: all 1s ease-in-out;
+    }
+}
+
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 35vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .alert-content {
+    text-align: center;
+    color: black;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "cormorant garamond", serif;
+
+    p{
+        font-size: 24px;
+    }
+
+}
+  
+  .alert-content button {
+    margin-top: 10px;
+    background-color: #bebcbc;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 15vw;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .blur {
+    filter: blur(15px);
+  }
+
+
+
+@media only screen and (max-width: 990px) {
+    .portfolio-container{
+        .resume{
+            margin-left: 10%;
+            gap: 20px;
+            width: 80vw;
+        }
+        .custom-alert{
+            height: 45vh;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .portfolio-container{
+        .resume{
+            flex-flow: column wrap;
+            margin-left: 10%;
+            gap: 20px;
+            width: 80vw;
+            .container{
+                flex-flow: column nowrap;
+            }
+            .box{
+                width: 96%;
+            }
+        }
+    }
+    .custom-alert{
+        width: 45vw;
+        height: 45vh;
+    }
+    .alert-content button{
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .portfolio-container{
+        margin-bottom: 30%;
+        .resume{
+            margin-left: 0%;
+            width: 94vw;
+        }
+        button{
+            margin-bottom: 15%;
+        }
+    }
+    .custom-alert{
+        width: 60vw;
+        height: 45vh;
+    }
+    .alert-content button{
+        width: 30vw;
+    }
 }

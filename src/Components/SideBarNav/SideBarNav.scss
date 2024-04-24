@@ -1,13 +1,15 @@
 .navigation {
   margin: 9% 3%;
   position: fixed;
-  height: 60vh;
-  width: 9vh;
+  height: 32rem;
+  width: 5rem;
   background: #ffc4d3;
   border-radius: 45px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   font-family:  "Bangers", system-ui;
   z-index: 2;
+  padding: 0;
+
 }
 
 .navigation ul {
@@ -15,11 +17,12 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 22px;
+  gap: 10px;
 }
 .navigation ul li {
   position: relative;
@@ -51,12 +54,12 @@
 .navigation ul li.active a .icon {
   color: #fff;
 }
-.navigation ul li a .icon i {
-  font-size: 24px;
+.navigation ul li a .icon .i {
+  font-size: 39px;
 }
 .navigation ul li a .title {
   position: absolute;
-  top: 50%;
+  top: 38%;
   left: 110px;
   background: #fff;
   transform: translateY(-50%);
@@ -75,7 +78,7 @@
 .navigation ul li a .title::before {
   content: "";
   position: absolute;
-  width: 12px;
+  width: 15px;
   height: 12px;
   background: #fff;
   left: -8px;
@@ -84,40 +87,109 @@
   transform: rotate(45deg) translateY(-50%);
   border-radius: 2px;
 }
-.navigation ul .indicator {
+.indicator {
   position: absolute;
-  left: 0;
-  width: 70px;
-  height: 70px;
+  left: 33%;
+  top: 10%;
+  width: 100;
+  height: 100;
   transition: 0.5s;
+
 }
-.navigation ul .indicator::before {
+.indicator::before {
   content: "";
   position: absolute;
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
   top: 50%;
-  left: 59%;
   transform: translate(-50%, -50%);
   background: #000000;
   border-radius: 50%;
   transition: 0.5s;
+  text-align: center;
+  
 }
 .navigation ul li:nth-child(1).active ~ .indicator {
-  transform: translateY(calc(70px * 0));
+  transform: translateY(calc(80px * 0));
 }
 .navigation ul li:nth-child(2).active ~ .indicator {
-  transform: translateY(calc(91px * 1));
+  transform: translateY(calc(78px * 1));
 }
 .navigation ul li:nth-child(3).active ~ .indicator {
-  transform: translateY(calc(91px * 2));
+  transform: translateY(calc(78.5px * 2));
 }
 .navigation ul li:nth-child(4).active ~ .indicator {
-  transform: translateY(calc(91.5px * 3));
+  transform: translateY(calc(79.5px * 3));
 }
 .navigation ul li:nth-child(5).active ~ .indicator {
-  transform: translateY(calc(91.5px * 4));
+  transform: translateY(calc(79.5px * 4));
 }
 .navigation ul li:nth-child(6).active ~ .indicator {
-  transform: translateY(calc(91.5px * 5));
+  transform: translateY(calc(79.5px * 5));
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navigation{
+    margin: 0;
+    padding: 0;
+    height: 9vh;
+    width: 100vw;
+    border-radius: 0;
+    position: fixed;
+    top: 91%;
+
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      top: -10%;
+
+      li{
+        a{
+          .icon{
+            .i{
+              
+            }
+          }
+          .title{
+            display: none;
+          }
+         
+        }
+      }
+      .indicator{
+        display: none;
+      }
+      .indicator::before{
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px){
+      .navigation{
+        height: 7vh;
+        position: fixed;
+        top: 93%;
+
+        ul{
+          position: relative;
+          top: -20%;
+          left: -2%;
+          li{
+            a{
+              .icon{
+                .i{
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+
+      }
 }

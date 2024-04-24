@@ -15,11 +15,11 @@ function MainBody() {
        <BrowserRouter>
         <SideBarNav className='sideBarNav'/>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Profile />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/portfolio" element={<Profile />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         </BrowserRouter>

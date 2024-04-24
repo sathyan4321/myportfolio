@@ -30,31 +30,7 @@ function Projects() {
           <li>Designed the page layout and styling to be responsive across all devices, ensuring optimal viewing and usability on desktops, tablets, and mobile phones.</li>
           </ol>,
         link: 'https://rvw.salondiary.in/?id=c03bcb89-6517-4d19-ae9e-854145385cae'
-        },
-        { id: 4, 
-          name: 'Project', 
-          description: 'Description of Project 2',
-          link: 'https://www.google.com'
-          },
-          { id: 4, 
-            name: 'Project', 
-            description: 'Description of Project 2',
-            link: 'https://www.google.com'
-            },
-            { id: 4, 
-              name: 'Project', 
-              description: 'Description of Project 2',
-              link: 'https://www.google.com'
-              },
-              { id: 4, 
-                name: 'Project', 
-                description: 'Description of Project 2',
-                link: 'https://www.google.com'
-                },{ id: 4, 
-                  name: 'Project', 
-                  description: 'Description of Project 2',
-                  link: 'https://www.google.com'
-                  }                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        }                                                                                                                                                                                                                                                                                                                                                                                                                                 
     // Add more project objects as needed
   ];
 
@@ -87,7 +63,7 @@ function Projects() {
 
 
 
-      <div className="pro-container two">
+      <div className=" two-hide">
         <h3>STEM Projects</h3>
 
       <div className="projects-list">

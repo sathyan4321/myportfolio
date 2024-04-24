@@ -3,16 +3,18 @@
     top: 0%;
     height: 100;
     width: 100%;
-    background:  #e6d7dc;
+    background:  #a78c95;
     padding: 0%;
+    scroll-behavior: smooth;
+    scrollbar-color: transparent;
   
     h1{
-      color: rgb(0, 0, 0);
-      font-family: "Bangers", system-ui;
-      font-weight: 700;
-      font-size: 30px;
-      letter-spacing: 0.2rem;
-    }
+      color: #ffffff;
+      font-size: 3rem;
+      font-family: "Bad Script", cursive;
+      font-weight: 600;
+      text-align: center;
+  }
   }
 
       .edu-container {
@@ -23,7 +25,6 @@
         width: 90%;
         margin: 0% auto;
         background: transparent ;
-        border-radius: 10px;
         padding: 1%;
 
       }
@@ -44,10 +45,10 @@
           top: 0;
           bottom: 0;
           left: 50%;
-          transform: translateX(-50%); // Center the line horizontally
+          transform: translateX(-50%);
           width: 2px;
-          background-color: rgb(167, 160, 160);
-          opacity: 0.7;
+          background-color: rgb(241, 241, 241);
+          opacity: 0.8;
         }
       }
 
@@ -62,12 +63,12 @@
         padding: 10px;
         border-radius: 10px;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1), -5px 5px 5px 5px rgba(0, 0, 0, 0.1);
-        margin: 0 10px; // Adjust the horizontal margins to center the content
+        margin: 0 10px; 
         animation: scrollAnimation 5s 2s linear;
       }
 
       .timeline-item-left .timeline-item-content {
-        position: relative; // Push content to the right for left-aligned items
+        position: relative; 
         right: -50%;
 
         &:before {
@@ -86,7 +87,7 @@
       }
 
       .timeline-item-right .timeline-item-content {
-        position: relative; // Push content to the right for left-aligned items
+        position: relative; 
         left: -50%; 
 
         &:before {
@@ -158,3 +159,87 @@
           transform: translateY(0);
         }
         }
+
+
+@media only screen and (max-width: 1400px) {
+        .edu-container{
+          margin-left: 10%;
+          display: flex;
+          justify-content: center;
+          gap: 0px;
+          .view-container{
+            width: 20%;
+            height: 30vh;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 20%;
+            margin: -85% auto 0% ;
+          }
+        }
+}
+
+@media only screen and (max-width: 990px) {
+  .edu-container{
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    
+    .timeline-item-content{
+      width: 35vw;
+    }
+    .view-container{
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .edu-container{
+    margin: 0% auto 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .timeline-item-content{
+      width: 40vw;
+    }
+    .view-container{
+      display: none;
+    }
+  }
+  .timeline-item-left .timeline-item-content {
+    position: relative; 
+    right: -49%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -16px;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .timeline-item-right .timeline-item-content {
+    position: relative; 
+    left: -49%; 
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -16px;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
