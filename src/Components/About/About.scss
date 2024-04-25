@@ -105,12 +105,13 @@
 
 @media only screen and (max-width: 990px) {
     .about-container{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0% auto 0%;
         .flex{
-            position: relative;
-            left: 0%;
             gap: 20px;
-            display: flex;
-            flex-flow: column wrap;
             p{
                 width: 60vw;
                 height: fit-content;
@@ -129,11 +130,7 @@
             width: 85vw;
         }
         .flex{
-            position: relative;
-            left: 0%;
-            gap: 0px;
-            display: flex;
-            flex-flow: column wrap;
+            
             p{
                 width: 90vw;
                 height: fit-content;

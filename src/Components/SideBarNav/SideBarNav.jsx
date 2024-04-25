@@ -29,7 +29,7 @@ function SideBarNav() {
         
           <ul>
             <li className="list active">
-              <Link to="/home" >
+              <Link to="/" >
                 <span className="icon"><FaHome className='i'/></span>
                 <span className="title">Home</span>
               </Link>

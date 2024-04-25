@@ -31,7 +31,7 @@ function Profile() {
 
           <div className="container">
           <div className="information box">
-              <h3>Contact</h3>
+              <h2>Contact</h2>
             <ul>
               <li>Email: <a href="sathyanr.4321@gmail.com">Click here</a></li>
               <li>GitHub: <a href="github.com/sathyan4321">Click here</a></li>
@@ -40,7 +40,7 @@ function Profile() {
           </div>
 
           <div className="soft-skills box">
-            <h3>Soft Skills</h3>
+            <h2>Soft Skills</h2>
             <ul>
             <li>Effective communication</li>
             <li>Flexibility</li>
@@ -55,8 +55,8 @@ function Profile() {
           </div>
 
           <div className="work-experience box">
-            <h3>Work Experience</h3>
-            <h4>Junior Full Stack Developer</h4>
+            <h2>Work Experience</h2>
+            <h3>Junior Full Stack Developer</h3>
             <p>Profenna Technologies, Tiruppur.  (March 2023 - March 2024)</p>
             <ul>
               <li>Spearheaded the implementation of robust back-end solutions using Node.js, resulting in a 30% decrease in page load times and a 25% increase in system efficiency.</li>
@@ -71,9 +71,9 @@ function Profile() {
           
 
           <div className="hard-skills box">
-            <h3>Hard Skills</h3>
+            <h2>Hard Skills</h2>
             <ul>
-              <h4>Front-End</h4>
+              <h3>Front-End</h3>
               <li>Proficient in writing semantic and accessible HTML markup, ensuring compatibility across different browsers and devices.</li>
               <li>Skilled in creating responsive and visually appealing layouts using CSS, including CSS grid and flexbox for efficient design.</li>
               <li>Strong understanding of core JavaScript concepts, such as variables, functions, and control flow, with experience in DOM manipulation and event handling.</li>
@@ -81,18 +81,18 @@ function Profile() {
               <li>Proficient in building dynamic and interactive user interfaces using React.js, including state management with hooks and context API for scalable applications.</li>
             </ul>
             <ul>
-              <h4>Back-End</h4>
+              <h3>Back-End</h3>
               <li>Node.js and Express.js</li>
               <li>Experienced in integrating Firebase services such as Firestore for real-time database management, Firebase Authentication for user authentication, and Cloud Functions for serverless computing.</li>
               <li>Skilled in database design and management using MySQL.</li>
             </ul>
             <ul>
-              <h4>Programming Languages</h4>
+              <h3>Programming Languages</h3>
               <li>Python</li>
               <li>Java</li>
             </ul>
             <ul>
-              <h4>Tools</h4>
+              <h3>Tools</h3>
               <li>Visual Studio Code</li>
               <li>Figma</li>
               <li>version control with Git and Github</li>
