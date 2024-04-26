@@ -39,20 +39,20 @@
         margin-top: 15%;
         transform-origin: left;
         animation-name: lineAnimationLeft;
-        border: 5px solid rgb(255, 255, 255);
-        border-radius: 10px;
+        border: 4px solid rgb(255, 255, 255);
+        border-radius: 2px;
       }
       
       .line-right {
         transform-origin: right;
         animation-name: lineAnimationRight;
-        border: 5px solid rgb(255, 255, 255);
-        border-radius: 10px;
+        border: 4px solid rgb(255, 255, 255);
+        border-radius: 2px;
       }
       
       @keyframes lineAnimationLeft {
         0% {
-          transform: scaleX(-3);
+          transform: scaleX(-10);
         }
         50% {
           transform: scaleX(0);
@@ -64,7 +64,7 @@
       
       @keyframes lineAnimationRight {
         0% {
-          transform: scaleX(-3);
+          transform: scaleX(-10);
         }
         50% {
           transform: scaleX(0);
@@ -112,12 +112,23 @@
                 background: linear-gradient(10deg, rgb(238, 188, 210) 0%, rgb(255, 176, 250) 100%);
                 transition: all 0.5s ease-in-out;
 
-                img{
+                .image{
                     width: 100%;
                     height: 70%;
                     border-radius: 20px 20px 0px 0px;
-                    background-color: aqua;
-                    transition: all 0.5s ease-in-out;
+                    background: transparent;
+                    transition: all 0.9s ease-in-out;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                      width: 105%;
+                      height: 105%;
+                      object-fit: cover;
+                      transition: all 0.9s ease-in-out;
+                    }
                 }
                 h3{
                     font-size: 1.6rem;
@@ -138,11 +149,20 @@
                 background: linear-gradient(50deg, rgb(250, 236, 249) 0%, rgb(255, 202, 224) 100%);
                 transition: all 0.5s ease-in-out;
 
-                img{
-                    transform: scale3d(0.99, 0.99, 0.99);
-                    width: 101%;
+                .image{
+                    transform: scale3d(1, 1, 1);
+                    width: 100%;
                     background-color: rgb(91, 128, 128);
-                    transition: all 0.5s ease-in-out;
+                    transition: all 0.9s ease-in-out;
+                    overflow: hidden;
+
+                    img{
+                      transform: scale3d(1.1, 1.1, 1.1);
+                      width: 165%;
+                      height: 165%;
+                      object-fit: cover;
+                      transition: all 0.9s ease-in-out;
+                    }
                 }
 
                 h3{
@@ -211,5 +231,37 @@
               }
           }
       }
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .pro{
+    .line-left{
+      margin-top: 50%;
+    }
+
+    @keyframes lineAnimationLeft {
+      0% {
+        transform: scaleX(-8);
+      }
+      50% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(8);
+      }
+    }
+    
+    @keyframes lineAnimationRight {
+      0% {
+        transform: scaleX(-8);
+      }
+      50% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(8);
+      }
+    }
   }
 }

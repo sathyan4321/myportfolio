@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import './Education.scss'; // Import your SCSS file for styling
 
 function Education() {

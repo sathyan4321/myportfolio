@@ -1,13 +1,14 @@
 .navigation {
   margin: 9% 3%;
   position: fixed;
+  top: 1rem;
   height: 32rem;
   width: 5rem;
   background: #ffc4d3;
   border-radius: 45px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   font-family:  "Bangers", system-ui;
-  z-index: 2;
+  z-index: 2000000;
   padding: 0;
 
 }
@@ -128,7 +129,12 @@
   transform: translateY(calc(79.5px * 5));
 }
 
-
+@media only screen and (max-width: 990px){
+  .navigation{
+    position: fixed;
+    top: 7rem;
+  }
+}
 @media only screen and (max-width: 600px) {
   .navigation{
     margin: 0;
